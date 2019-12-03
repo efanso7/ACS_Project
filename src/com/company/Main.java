@@ -17,7 +17,18 @@ public class Main {
         System.out.println("Your cards: " + card1 + ", " + card2 + ", " + card3 + ", " + card4 + ", " + card5);
     }
 
-    public static void main(String[] args) {
+    public static void player1(){
+        System.out.println("Player 1");
         cards();
+    }
+
+    public static void player2(){
+        System.out.println("Player 2");
+        cards();
+    }
+
+    public static void main(String[] args) {
+        player1();
+        player2();
     }
 }
