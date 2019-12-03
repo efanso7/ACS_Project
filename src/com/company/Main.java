@@ -6,7 +6,7 @@ public class Main {
         double x = (Math.random() * ((13 - 1)+1))+1;
         return x;
     }
-
+    /*
     public static void cards() {
         int card1 = (int)pickcard();
         int card2 = (int)pickcard();
@@ -26,9 +26,19 @@ public class Main {
         System.out.println("Player 2");
         cards();
     }
+    */
+    public static void deal(){
+        int card1 = (int)pickcard();
+        int card2 = (int)pickcard();
+        while(card1 == card2){
+            card2 = (int)pickcard();
+        }
+        System.out.println(card1 + " " + card2);
+    }
 
     public static void main(String[] args) {
-        player1();
-        player2();
+        //player1();
+        //player2();
+        deal();
     }
 }
