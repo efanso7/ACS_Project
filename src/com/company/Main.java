@@ -2,6 +2,21 @@ package com.company;
 
 public class Main {
 
+    public static void deck(){
+        int deck[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+
+        
+        System.out.println(deck[0]);
+    }
+
+
+
+
+
+
+
+
+
     public static double pickcard(){
         double x = (Math.random() * ((13 - 1)+1))+1;
         return x;
@@ -30,5 +45,6 @@ public class Main {
     public static void main(String[] args) {
         player1();
         player2();
+        deck();
     }
 }
