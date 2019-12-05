@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
 
-    
+
     public static double pickcard(){
         double x = (Math.random() * ((13 - 1)+1))+1;
         return x;
@@ -55,7 +55,9 @@ public class Main {
         System.out.println("Player 1: " + card1 + ", " + card3 + ", " + card5 + ", " + card7 + ", " + card9);
         System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
 
+        //ask which card each player wants to play
 
+        
 
     }
 }
