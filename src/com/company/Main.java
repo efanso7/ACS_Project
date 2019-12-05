@@ -27,7 +27,7 @@ public class Main {
         cards();
     }
     */
-    public static void deal(){
+    public static int deal(){
         int card1 = (int)pickcard();
         int card2 = (int)pickcard();
         int card3 = (int)pickcard();
@@ -69,8 +69,12 @@ public class Main {
 
         System.out.println("Player 1: " + card1 + ", " + card3 + ", " + card5 + ", " + card7 + ", " + card9);
         System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
+        //int cards[] = {card1, card2, card3, card4, card5, card6, card7, card8, card9, card10};
+        //int player1[] = {card1, card3, card5, card7, card9};
+        //int player2[] = {card2, card4, card6, card8, card10};
+        //return cards[];
 
-        
+
     }
 
     public static void main(String[] args) {
