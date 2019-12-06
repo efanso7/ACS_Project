@@ -68,7 +68,23 @@ public class Main {
             }
         }
         else{
-            System.out.println("player 1 played card " + cardPlayed);
+            if (cardPlayed == 1){
+                cardPlayed = card1;
+            }
+            else if (cardPlayed == 2){
+                cardPlayed = card3;
+            }
+            else if (cardPlayed == 3){
+                cardPlayed = card5;
+            }
+            else if (cardPlayed == 4){
+                cardPlayed = card7;
+            }
+            else if (cardPlayed == 5){
+                cardPlayed = card9;
+            }
+
+            System.out.println("player 1 played a " + cardPlayed);
             int player1card = cardPlayed;
         }
 
@@ -82,7 +98,23 @@ public class Main {
             }
         }
         else{
-            System.out.println("player 2 played card " + cardPlayed);
+            if (cardPlayed == 1){
+                cardPlayed = card2;
+            }
+            else if (cardPlayed == 2){
+                cardPlayed = card4;
+            }
+            else if (cardPlayed == 3){
+                cardPlayed = card6;
+            }
+            else if (cardPlayed == 4){
+                cardPlayed = card8;
+            }
+            else if (cardPlayed == 5){
+                cardPlayed = card10;
+            }
+
+            System.out.println("player 2 played a " + cardPlayed);
             int player2card = cardPlayed;
         }
 
