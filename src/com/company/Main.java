@@ -55,6 +55,7 @@ public class Main {
 
         System.out.println("Player 1: " + card1 + ", " + card3 + ", " + card5 + ", " + card7 + ", " + card9);
         System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
+        System.out.println("");
 
         //ask which card each player wants to play
 
@@ -88,6 +89,7 @@ public class Main {
             }
             player1card = cardPlayed;
             System.out.println("player 1 played a " + player1card);
+            System.out.println("");
 
         }
 
@@ -118,23 +120,32 @@ public class Main {
             }
             player2card = cardPlayed;
             System.out.println("player 2 played a " + player2card);
+            System.out.println("");
 
         }
 
         //decide who wins
+
+        int player1points = 0;
+        int player2points = 0;
+
         //player 1 wins
 
         if (player1card > player2card){
             System.out.println("player 1 wins");
-            int player1points = 1;
-            int player2points = 0;
+            System.out.println("");
+            player1points = player1points + 1;
         }
         //player 2 wins
         else if (player1card < player2card){
             System.out.println("player 2 wins");
-            int player1points = 1;
-            int player2points = 0;
+            System.out.println("");
+            player2points = player2points + 1;
         }
-
+        // print score
+        System.out.println("score");
+        System.out.println("");
+        System.out.println("player1: " + player1points);
+        System.out.println("player2: " + player2points);
     }
 }
