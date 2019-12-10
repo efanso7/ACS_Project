@@ -147,5 +147,6 @@ public class Main {
         System.out.println("");
         System.out.println("player1: " + player1points);
         System.out.println("player2: " + player2points);
+        System.out.println("");
     }
 }
