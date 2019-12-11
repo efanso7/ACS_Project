@@ -53,6 +53,13 @@ public class Main {
             card10 = (int) pickcard();
         }
 
+        int player1points = 0;
+        int player2points = 0;
+
+        int player1card = 0;
+        int player2card = 0;
+        
+        while (player1points <= 5 || player1points)
         //dont print cards already played
 
         //player1
@@ -99,8 +106,7 @@ public class Main {
 
         //ask which card each player wants to play
 
-        int player1card = 0;
-        int player2card = 0;
+
 
         //player 1
         System.out.println("player 1 what card do you want to play: ");
@@ -173,8 +179,7 @@ public class Main {
 
         //decide who wins
 
-        int player1points = 0;
-        int player2points = 0;
+
 
         //player 1 wins
         if (player1card > player2card){
@@ -200,7 +205,7 @@ public class Main {
 
 
 
-
+/*
         //round 2
 
         //dont print cards already played
@@ -340,5 +345,8 @@ public class Main {
         System.out.println("player1: " + player1points);
         System.out.println("player2: " + player2points);
         System.out.println("");
+
+
+ */
     }
 }
