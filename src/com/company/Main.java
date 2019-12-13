@@ -456,13 +456,13 @@ public class Main {
 
             //player 1 wins
             if (player1card > player2card) {
-                System.out.println("player 1 wins");
+                System.out.println("player 1 wins round " + (totalpoints + 1));
                 player1points = player1points + 1;
             }
 
             //player 2 wins
             else if (player1card < player2card) {
-                System.out.println("player 2 wins");
+                System.out.println("player 2 wins round " + (totalpoints + 1));
                 player2points = player2points + 1;
             }
 
@@ -473,6 +473,13 @@ public class Main {
             System.out.println("player2: " + player2points);
             System.out.println("");
 
+        }
+
+        if (player1points > player2points){
+            System.out.println("Congrats Player 1 you win");
+        }
+        if (player2points > player1points){
+            System.out.println("Congrats Player 2 you win");
         }
     }
 }
