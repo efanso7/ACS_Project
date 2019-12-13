@@ -366,26 +366,294 @@ public class Main {
 
                 
             //player2
-            if (player1points > 0 || player2points > 0) {
-                if (card2 == 0) {
-                    System.out.println("Player 2: " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
-                }
-                if (card4 == 0) {
-                    System.out.println("Player 2: " + card2 + ", " + card6 + ", " + card8 + ", " + card10);
-                }
-                if (card6 == 0) {
-                    System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card8 + ", " + card10);
-                }
-                if (card8 == 0) {
-                    System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card10);
-                }
-                if (card10 == 0) {
-                    System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8);
-                }
-            }
-            else {
+
+            //round1
+
+            if (totalpoints == 0) {
                 System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
             }
+
+            //round 2
+
+            if (totalpoints == 1) {
+                if (card1 == 0) {
+                    System.out.println("Player 2: " + card3 + ", " + card5 + ", " + card7 + ", " + card9);
+                }
+                if (card3 == 0) {
+                    System.out.println("Player 2: " + card1 + ", " + card5 + ", " + card7 + ", " + card9);
+                }
+                if (card5 == 0) {
+                    System.out.println("Player 2: " + card1 + ", " + card3 + ", " + card7 + ", " + card9);
+                }
+                if (card7 == 0) {
+                    System.out.println("Player 2: " + card1 + ", " + card3 + ", " + card5 + ", " + card9);
+                }
+                if (card9 == 0) {
+                    System.out.println("Player 2: " + card1 + ", " + card3 + ", " + card5 + ", " + card7);
+                }
+            }
+
+            //round3
+
+            if (totalpoints == 2) {
+                if (card1 == 0) {
+                    if (card3 == 0) {
+                        System.out.println("Player 2: " + card5 + ", " + card7 + ", " + card9);
+                    }
+                    if (card5 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card7 + ", " + card9);
+                    }
+                    if (card7 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card5 + ", " + card9);
+                    }
+                    if (card9 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card5 + ", " + card7);
+                    }
+                }
+
+                if (card3 == 0) {
+                    if (card5 == 0) {
+                        System.out.println("Player 2: " + card1 + ", " + card7 + ", " + card9);
+                    }
+                    if (card7 == 0) {
+                        System.out.println("Player 2: " + card1 + ", " + card5 + ", " + card9);
+                    }
+                    if (card9 == 0) {
+                        System.out.println("Player 2: " + card1 + ", " + card5 + ", " + card7);
+                    }
+                }
+
+                if (card5 == 0) {
+                    if (card3 == 0) {
+                        System.out.println("Player 2: " + card1 + ", " + card7 + ", " + card9);
+                    }
+                    if (card7 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card1 + ", " + card9);
+                    }
+                    if (card9 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card1 + ", " + card7);
+                    }
+                }
+
+                if (card7 == 0) {
+                    if (card3 == 0) {
+                        System.out.println("Player 2: " + card5 + ", " + card1 + ", " + card9);
+                    }
+                    if (card5 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card1 + ", " + card9);
+                    }
+                    if (card9 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card5 + ", " + card1);
+                    }
+                }
+
+                if (card9 == 0) {
+                    if (card3 == 0) {
+                        System.out.println("Player 2: " + card5 + ", " + card7 + ", " + card1);
+                    }
+                    if (card5 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card7 + ", " + card1);
+                    }
+                    if (card7 == 0) {
+                        System.out.println("Player 2: " + card3 + ", " + card5 + ", " + card1);
+                    }
+                }
+            }
+
+            //round 4
+
+            if (totalpoints == 3) {
+                if (card1 == 0) {
+                    if (card3 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card7 + ", " + card9);
+                        }
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card7);
+                        }
+                    }
+                    if (card5 == 0) {
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card7);
+                        }
+                    }
+                    if (card7 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card3);
+                        }
+                    }
+                    if (card9 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card7 + ", " + card3);
+                        }
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card3);
+                        }
+                    }
+                }
+
+                if (card3 == 0) {
+                    if (card5 == 0) {
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card7);
+                        }
+                    }
+                    if (card7 == 0) {
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card1);
+                        }
+                    }
+                    if (card9 == 0) {
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card1);
+                        }
+                    }
+                }
+
+                if (card5 == 0) {
+                    if (card3 == 0) {
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card7);
+                        }
+                    }
+                    if (card1 == 0) {
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card7);
+                        }
+                    }
+                    if (card7 == 0) {
+                        if (card1 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card3);
+                        }
+                    }
+                    if (card9 == 0) {
+                        if (card1 == 0) {
+                            System.out.println("Player 2: " + card7 + ", " + card3);
+                        }
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card3);
+                        }
+                    }
+                }
+
+                if (card7 == 0) {
+                    if (card3 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card1);
+                        }
+                    }
+                    if (card5 == 0) {
+                        if (card1 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card1);
+                        }
+                    }
+                    if (card1 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card9);
+                        }
+                        if (card9 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card3);
+                        }
+                    }
+                    if (card9 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card1 + ", " + card3);
+                        }
+                        if (card1 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card3);
+                        }
+                    }
+                }
+
+                if (card9 == 0) {
+                    if (card3 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card7 + ", " + card1);
+                        }
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card1);
+                        }
+                    }
+                    if (card5 == 0) {
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card1);
+                        }
+                        if (card1 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card7);
+                        }
+                    }
+                    if (card7 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card3 + ", " + card1);
+                        }
+                        if (card1 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card3);
+                        }
+                    }
+                    if (card1 == 0) {
+                        if (card5 == 0) {
+                            System.out.println("Player 2: " + card7 + ", " + card3);
+                        }
+                        if (card7 == 0) {
+                            System.out.println("Player 2: " + card5 + ", " + card3);
+                        }
+                    }
+                }
+            }
+
+            //round 5
+
+            if (totalpoints == 4) {
+
+                if (card1 != 0) {
+                    System.out.println("Player 2: " + card1);
+                }
+
+                if (card3 != 0) {
+                    System.out.println("Player 2: " + card3);
+                }
+
+                if (card5 != 0) {
+                    System.out.println("Player 2: " + card5);
+                }
+
+                if (card7 != 0) {
+                    System.out.println("Player 2: " + card7);
+                }
+
+                if (card9 != 0) {
+                    System.out.println("Player 2: " + card9);
+                }
+            }
+
+
 
             System.out.println("");
 
