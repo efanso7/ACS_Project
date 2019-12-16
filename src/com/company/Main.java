@@ -220,6 +220,67 @@ public class Main {
                 }
             }
 
+            //ask which card player 1 wants to play
+            System.out.println("player 1 what card do you want to play: ");
+            int cardPlayed = sc.nextInt();
+            if (cardPlayed != card1 && cardPlayed != card3 && cardPlayed != card5 && cardPlayed != card7 && cardPlayed != card9) {
+                while (cardPlayed != card1 && cardPlayed != card3 && cardPlayed != card5 && cardPlayed != card7 && cardPlayed != card9) {
+                    System.out.println("player 1 you do not have that card what card do you want to play: ");
+                    cardPlayed = sc.nextInt();
+                }
+            }
+            else{
+                if (cardPlayed == card1){
+                    player1card = card1;
+                    card1 = 0;
+                }
+                else if (cardPlayed == card3){
+                    player1card = card3;
+                    card3 = 0;
+                }
+                else if (cardPlayed == card5){
+                    player1card = card5;
+                    card5 = 0;
+                }
+                else if (cardPlayed == card7){
+                    player1card = card7;
+                    card7 = 0;
+                }
+                else if (cardPlayed == card9){
+                    player1card = card9;
+                    card9 = 0;
+                }
+            }
+
+            //dont show player1's cards cards
+
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+
+            System.out.println("player 2 are you ready? (type any number)");
+            int uselessvariable = sc.nextInt();
+
+            System.out.println("player 1 played a " + player1card);
+            System.out.println("");
+
 
 
             //player2
@@ -377,48 +438,7 @@ public class Main {
                 }
             }
 
-
-            System.out.println("");
-
-            //ask which card each player wants to play
-
-
-            //player 1
-            System.out.println("player 1 what card do you want to play: ");
-            int cardPlayed = sc.nextInt();
-            if (cardPlayed != card1 && cardPlayed != card3 && cardPlayed != card5 && cardPlayed != card7 && cardPlayed != card9) {
-                while (cardPlayed != card1 && cardPlayed != card3 && cardPlayed != card5 && cardPlayed != card7 && cardPlayed != card9) {
-                    System.out.println("player 1 you do not have that card what card do you want to play: ");
-                    cardPlayed = sc.nextInt();
-                }
-            }
-            else{
-                if (cardPlayed == card1){
-                    player1card = card1;
-                    card1 = 0;
-                }
-                else if (cardPlayed == card3){
-                    player1card = card3;
-                    card3 = 0;
-                }
-                else if (cardPlayed == card5){
-                    player1card = card5;
-                    card5 = 0;
-                }
-                else if (cardPlayed == card7){
-                    player1card = card7;
-                    card7 = 0;
-                }
-                else if (cardPlayed == card9){
-                    player1card = card9;
-                    card9 = 0;
-                }
-                System.out.println("player 1 played a " + player1card);
-                System.out.println("");
-
-            }
-
-            //player 2
+            //ask which card player 2 wants to play
             System.out.println("player 2 what card do you want to play: ");
             cardPlayed = sc.nextInt();
             if (cardPlayed != card2 && cardPlayed != card4 && cardPlayed != card6 && cardPlayed != card8 && cardPlayed != card10) {
@@ -448,9 +468,40 @@ public class Main {
                     player2card = card10;
                     card10 = 0;
                 }
-                System.out.println("player 2 played a " + player2card);
-                System.out.println("");
             }
+
+            //dont show player1's cards cards
+
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+
+            System.out.println("player 1 are you ready? (type any number)");
+            uselessvariable = sc.nextInt();
+
+            System.out.println("player 2 played a " + player2card);
+            System.out.println("");
+            
+
+
+
 
             //decide who wins
 
