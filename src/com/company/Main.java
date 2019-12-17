@@ -1,8 +1,22 @@
 package com.company;
 import java.util.Scanner;
+
 public class Main {
 
 
+    static int totaltricks = 0;
+    static int player1tricks = 0;
+    static int player2tricks = 0;
+    /*
+    public static double[] totaltrick(){
+        int totaltricks = 0;
+        int player1tricks = 0;
+        int player2tricks = 0;
+        double[] tricks = {totaltricks, player1tricks, player2tricks};
+        return tricks;
+    }
+
+*/
 
     public static double pickcard(){
         double x = (Math.random() * ((13 - 1)+1))+1;
@@ -11,7 +25,7 @@ public class Main {
 
 
 
-    public static void main(String[] args) {
+    public static double[] trick(){
         Scanner sc = new Scanner(System.in);
         //deal
         int card1 = (int) pickcard();
@@ -949,10 +963,20 @@ public class Main {
 
         //print winner
         if (player1points > player2points){
-                System.out.println("Congrats Player 1 you won the round");
+            System.out.println("Congrats Player 1 you won the round");
+            player1tricks = player1tricks + 1;
         }
         if (player2points > player1points){
-                System.out.println("Congrats Player 2 you won the round");
+            System.out.println("Congrats Player 2 you won the round");
+            player2tricks = player2tricks + 1;
         }
+
+        return
+    }
+
+    public static void main(String[] args) {
+
+        //totaltrick();
+        trick();
     }
 }
