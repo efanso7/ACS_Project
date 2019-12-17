@@ -65,7 +65,7 @@ public class Main {
 
         while (totalpoints < 5) {
 
-            //if player 2 won last round
+            //if player 1 won last round
 
             if (firstplay == 0) {
                 //dont print cards already played
@@ -415,7 +415,6 @@ public class Main {
 
                 if (totalpoints == 4) {
                     //declare last round
-                    firstplay = 2;
 
                     if (card2 != 0) {
                         System.out.println("Player 2: " + card2);
@@ -467,17 +466,9 @@ public class Main {
             }
 
 
-
-
-
-
-
-
-
-
             //if player 2 won last round
 
-            else if (totalpoints == 1){
+            else if (firstplay == 1) {
                 //dont print cards already played
 
                 //player2
@@ -692,7 +683,6 @@ public class Main {
                 System.out.println("");
 
 
-
                 //player1
 
                 //round1
@@ -826,7 +816,6 @@ public class Main {
 
                 if (totalpoints == 4) {
                     //declare last round
-                    firstplay = 2;
 
                     if (card1 != 0) {
                         System.out.println("Player 1: " + card1);
@@ -944,23 +933,26 @@ public class Main {
             System.out.println("player1: " + player1points);
             System.out.println("player2: " + player2points);
             System.out.println("");
+            if (totalpoints < 5) {
+                if (firstplay == 0) {
+                    System.out.println("player1's turn (type a number to continue)");
+                    uselessvariable = sc.nextInt();
+                } else if (firstplay == 1) {
+                    System.out.println("player2's turn (type a number to continue)");
+                    uselessvariable = sc.nextInt();
+                }
+            }
+        }
+        //leave space
 
-            if (firstplay == 0) {
-                System.out.println("player1's turn (type a number to continue)");
-                uselessvariable = sc.nextInt();
-            }
-            else if (firstplay == 1){
-                System.out.println("player2's turn (type a number to continue)");
-                uselessvariable = sc.nextInt();
-            }
-            else{
-                if (player1points > player2points){
-                    System.out.println("Congrats Player 1 you win");
-                }
-                if (player2points > player1points){
-                    System.out.println("Congrats Player 2 you win");
-                }
-            }
+        System.out.println("");
+
+        //print winner
+        if (player1points > player2points){
+                System.out.println("Congrats Player 1 you win");
+        }
+        if (player2points > player1points){
+                System.out.println("Congrats Player 2 you win");
         }
     }
 }
