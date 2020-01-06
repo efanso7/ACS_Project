@@ -65,20 +65,20 @@ public class Main {
 
         while (totalpoints < 5) {
 
-            //if player 1 won last round
+            //if player 1 won last trick
 
             if (firstplay == 0) {
                 //dont print cards already played
 
                 //player1
 
-                //round1
+                //trick 1
 
                 if (totalpoints == 0) {
                     System.out.println("Player 1: " + card1 + ", " + card3 + ", " + card5 + ", " + card7 + ", " + card9);
                 }
 
-                //round 2
+                //trick 2
 
                 if (totalpoints == 1) {
                     if (card1 == 0) {
@@ -98,7 +98,7 @@ public class Main {
                     }
                 }
 
-                //round3
+                //trick 3
 
                 if (totalpoints == 2) {
                     if (card1 == 0) {
@@ -144,7 +144,7 @@ public class Main {
                     }
                 }
 
-                //round 4
+                //trick 4
 
                 if (totalpoints == 3) {
                     if (card1 == 0) {
@@ -199,7 +199,7 @@ public class Main {
                     }
                 }
 
-                //round 5
+                //trick 5
 
                 if (totalpoints == 4) {
 
@@ -284,13 +284,13 @@ public class Main {
                 //player2
 
 
-                //round1
+                //trick 1
 
                 if (totalpoints == 0) {
                     System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
                 }
 
-                //round 2
+                //trick 2
 
                 if (totalpoints == 1) {
                     if (card2 == 0) {
@@ -310,7 +310,7 @@ public class Main {
                     }
                 }
 
-                //round3
+                //trick 3
 
                 if (totalpoints == 2) {
                     if (card2 == 0) {
@@ -356,7 +356,7 @@ public class Main {
                     }
                 }
 
-                //round 4
+                //trick 4
 
                 if (totalpoints == 3) {
                     if (card2 == 0) {
@@ -411,10 +411,10 @@ public class Main {
                     }
                 }
 
-                //round 5
+                //trick 5
 
                 if (totalpoints == 4) {
-                    //declare last round
+                    //declare last trick
 
                     if (card2 != 0) {
                         System.out.println("Player 2: " + card2);
@@ -466,7 +466,7 @@ public class Main {
             }
 
 
-            //if player 2 won last round
+            //if player 2 won last trick
 
             else if (firstplay == 1) {
                 //dont print cards already played
@@ -474,13 +474,13 @@ public class Main {
                 //player2
 
 
-                //round1
+                //trick 1
 
                 if (totalpoints == 0) {
                     System.out.println("Player 2: " + card2 + ", " + card4 + ", " + card6 + ", " + card8 + ", " + card10);
                 }
 
-                //round 2
+                //trick 2
 
                 if (totalpoints == 1) {
                     if (card2 == 0) {
@@ -500,7 +500,7 @@ public class Main {
                     }
                 }
 
-                //round3
+                //trick 3
 
                 if (totalpoints == 2) {
                     if (card2 == 0) {
@@ -546,7 +546,7 @@ public class Main {
                     }
                 }
 
-                //round 4
+                //trick 4
 
                 if (totalpoints == 3) {
                     if (card2 == 0) {
@@ -601,7 +601,7 @@ public class Main {
                     }
                 }
 
-                //round 5
+                //trick 5
 
                 if (totalpoints == 4) {
 
@@ -685,13 +685,13 @@ public class Main {
 
                 //player1
 
-                //round1
+                //trick 1
 
                 if (totalpoints == 0) {
                     System.out.println("Player 1: " + card1 + ", " + card3 + ", " + card5 + ", " + card7 + ", " + card9);
                 }
 
-                //round 2
+                //trick 2
 
                 if (totalpoints == 1) {
                     if (card1 == 0) {
@@ -711,7 +711,7 @@ public class Main {
                     }
                 }
 
-                //round3
+                //trick 3
 
                 if (totalpoints == 2) {
                     if (card1 == 0) {
@@ -757,7 +757,7 @@ public class Main {
                     }
                 }
 
-                //round 4
+                //trick 4
 
                 if (totalpoints == 3) {
                     if (card1 == 0) {
@@ -812,10 +812,10 @@ public class Main {
                     }
                 }
 
-                //round 5
+                //trick 5
 
                 if (totalpoints == 4) {
-                    //declare last round
+                    //declare last trick
 
                     if (card1 != 0) {
                         System.out.println("Player 1: " + card1);
@@ -893,7 +893,7 @@ public class Main {
                 System.out.println("");
                 System.out.println("");
 
-                System.out.println("player 1 wins round " + (totalpoints + 1));
+                System.out.println("player 1 wins trick " + (totalpoints + 1));
                 player1points = player1points + 1;
                 firstplay = 0;
             }
@@ -922,7 +922,7 @@ public class Main {
                 System.out.println("");
                 System.out.println("");
 
-                System.out.println("player 2 wins round " + (totalpoints + 1));
+                System.out.println("player 2 wins trick " + (totalpoints + 1));
                 player2points = player2points + 1;
                 firstplay = 1;
             }
@@ -937,7 +937,7 @@ public class Main {
                 if (firstplay == 0) {
                     System.out.println("player1's turn (type a number to continue)");
                     uselessvariable = sc.nextInt();
-                } else if (firstplay == 1) {
+                } else{
                     System.out.println("player2's turn (type a number to continue)");
                     uselessvariable = sc.nextInt();
                 }
@@ -949,10 +949,10 @@ public class Main {
 
         //print winner
         if (player1points > player2points){
-                System.out.println("Congrats Player 1 you win");
+            System.out.println("Congrats Player 1 you won the round");
         }
         if (player2points > player1points){
-                System.out.println("Congrats Player 2 you win");
+            System.out.println("Congrats Player 2 you won the round");
         }
     }
 }
